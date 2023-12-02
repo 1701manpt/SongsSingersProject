@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.*?>
+<?import org.kordamp.bootstrapfx.BootstrapFX?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<AnchorPane prefWidth="250" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            fx:controller="sgu.ltudm.songssingersproject.controllers.AppMenuController">
+    <stylesheets>
+        <BootstrapFX fx:factory="bootstrapFXStylesheet"/>
+    </stylesheets>
+    <stylesheets>
+        <URL value="@../styles/AppMenu.css"/>
+    </stylesheets>
+    <children>
+        <VBox alignment="TOP_CENTER" spacing="20" AnchorPane.bottomAnchor="20" AnchorPane.leftAnchor="20"
+              AnchorPane.rightAnchor="20" AnchorPane.topAnchor="20">
+            <children>
+                <Button fx:id="home_btn" prefHeight="100" prefWidth="Infinity" text="Trang chủ" styleClass="my-button">
+
+                </Button>
+                <Button fx:id="song_btn" prefHeight="100" prefWidth="Infinity" text="Bài hát" styleClass="my-button">
+
+                </Button>
+                <Button fx:id="singer_btn" prefHeight="100" prefWidth="Infinity" text="Ca sĩ" styleClass="my-button">
+
+                </Button>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

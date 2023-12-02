@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.bootstrapfx.BootstrapFX?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="Infinity" prefWidth="Infinity"
+            xmlns="http://javafx.com/javafx/17.0.2-ea"
+            fx:controller="sgu.ltudm.songssingersproject.controllers.SongController">
+    <stylesheets>
+        <BootstrapFX fx:factory="bootstrapFXStylesheet"/>
+    </stylesheets>
+    <children>
+        <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                    AnchorPane.topAnchor="0.0">
+            <top>
+                <HBox alignment="CENTER" spacing="10">
+                    <TextField fx:id="SongTitle_TextField" prefHeight="40" prefWidth="500"
+                               promptText="Nhập tên bài hát...." stylesheets="@../styles/TextField.css"/>
+
+                    <Button fx:id="Search_Button" prefHeight="40" stylesheets="@../styles/Button.css" text="Tìm kiếm"/>
+                </HBox>
+            </top>
+            <center>
+                <ScrollPane fx:id="ScrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER"
+                            stylesheets="@../styles/CustomScrollPane.css" vbarPolicy="AS_NEEDED">
+                    <BorderPane.margin>
+                        <Insets top="20"/>
+                    </BorderPane.margin>
+                    <padding>
+                        <Insets left="10.0" right="10.0"/>
+                    </padding>
+                    <!-- Bất kỳ nội dung nào bạn muốn cuộn -->
+                    <VBox fx:id="vbox" spacing="20" alignment="CENTER">
+                        <!-- Bất kỳ nội dung nào bạn muốn hiển thị -->
+                        <Text fx:id="Result_Text" lineSpacing="10"/>
+
+                        <ProgressIndicator fx:id="progressIndicator" visible="false"/>
+
+                        <VBox fx:id="MediaPlayerLayout" visible="false" spacing="10" alignment="CENTER">
+                            <Text fx:id="SongTitle" />
+                            <MediaView fx:id="VideoMediaView" />
+                            <HBox spacing="10" alignment="CENTER">
+                                <Button fx:id="PlayVideoButton" text="Play Video" />
+                                <Button fx:id="PlayAudioButton" text="Play Audio" />
+                                <Button fx:id="PlayButton" text="Continue Play" />
+                                <Button fx:id="PauseButton" text="Pause" />
+                                <Button fx:id="StopButton" text="Stop" />
+                                <Slider fx:id="VolumeSlider" min="0" max="1" value="0.5" />
+                            </HBox>
+                        </VBox>
+                    </VBox>
+                </ScrollPane>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

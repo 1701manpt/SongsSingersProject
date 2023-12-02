@@ -1,0 +1,22 @@
+/* styles.css */
+
+.scroll-pane {
+    -fx-background-color: transparent; /* Đặt màu nền của ScrollPane là trong suốt */
+    -fx-border-color: transparent; /* Ẩn đường viền của ScrollPane */
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent; /* Đặt màu nền của viewport (nơi hiển thị nội dung) là trong suốt */
+}
+
+.scroll-pane .scroll-bar {
+    -fx-background-color: #ecf0f1; /* Đặt màu nền của thanh cuộn */
+}
+
+.scroll-pane .scroll-bar-thumb {
+    -fx-background-color: #3498db; /* Đặt màu nền của nút trượt thanh cuộn */
+}
+
+.scroll-pane .scroll-content {
+    -fx-alignment: center;
+}

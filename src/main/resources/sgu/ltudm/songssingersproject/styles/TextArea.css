@@ -1,0 +1,13 @@
+.text-area {
+    -fx-text-fill: black;
+    -fx-border-width: 0; /* Loại bỏ đường viền */
+    -fx-padding: 1; /* Đảm bảo không có khoảng trắng ngoại vi */
+    -fx-background-color: transparent; /* Đặt màu nền là trong suốt */
+    -fx-focus-color: transparent; /* Đặt màu khi nhấp vào là trong suốt */
+    -fx-control-inner-background: transparent;
+}
+
+.text-area:focused {
+    -fx-background-color: transparent;
+    -fx-control-inner-background: transparent;
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="Infinity" prefWidth="Infinity"
+            xmlns="http://javafx.com/javafx/17.0.2-ea"
+            fx:controller="sgu.ltudm.songssingersproject.controllers.HomeController">
+    <children>
+        <Text fx:id="homeData" text="Trang chủ" />
+    </children>
+</AnchorPane>

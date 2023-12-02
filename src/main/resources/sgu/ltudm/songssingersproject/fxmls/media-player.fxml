@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Slider?>
+
+<?import javafx.scene.layout.VBox?>
+<HBox xmlns:fx="http://javafx.com/fxml" spacing="10" fx:controller="sgu.ltudm.songssingersproject.controllers.MediaPlayerController">
+    <VBox spacing="10">
+        <Button fx:id="PlayButton" text="Play" />
+        <Button fx:id="PauseButton" text="Pause" />
+        <Button fx:id="StopButton" text="Stop" />
+        <Slider fx:id="VolumeSlider" min="0" max="1" value="0.5" />
+    </VBox>
+    <MediaView fx:id="VideoMediaView" />
+</HBox>

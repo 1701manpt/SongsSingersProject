@@ -1,0 +1,8 @@
+.text-field {
+    -fx-background-radius: 10; /* Góc bo tròn */
+        -fx-border-width: 0; /* Độ rộng của đường viền */
+}
+
+.text-field:focused {
+    -fx-font-size: 20;
+}

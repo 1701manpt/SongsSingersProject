@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.*?>
+<?import org.kordamp.bootstrapfx.BootstrapFX?>
+<?import java.lang.String?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:id="app_view" prefHeight="Infinity" prefWidth="Infinity"
+            xmlns="http://javafx.com/javafx/17.0.2-ea"
+            fx:controller="sgu.ltudm.songssingersproject.controllers.Controller">
+    <stylesheets>
+        <BootstrapFX fx:factory="bootstrapFXStylesheet"/>
+    </stylesheets>
+    <style>
+        -fx-background-color: white;
+        -fx-font-size: 20;
+    </style>
+
+    <!--    <top>-->
+    <!--        <AnchorPane prefHeight="3.0" prefWidth="Infinity" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">-->
+    <!--            <styleClass>-->
+    <!--                <String fx:value="bg-primary" />-->
+    <!--            </styleClass>-->
+    <!--        </AnchorPane>-->
+    <!--    </top>-->
+    <left>
+        <AnchorPane xmlns:fx="http://javafx.com/fxml/1"
+                    xmlns="http://javafx.com/javafx/17.0.2-ea"
+        >
+            <style>
+                -fx-background-color: lightsteelblue;
+                -fx-background-radius: 10;
+            </style>
+            <BorderPane.margin>
+                <Insets bottom="20" left="20" right="0" top="20"/>
+            </BorderPane.margin>
+            <fx:include source="app-menu.fxml"/>
+        </AnchorPane>
+    </left>
+    <center>
+        <AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="app_content"
+                    prefWidth="Infinity" xmlns="http://javafx.com/javafx/17.0.2-ea">
+            <styleClass>
+                <String fx:value="bg-primary"/>
+            </styleClass>
+            <style>
+                -fx-background-radius: 10;
+                -fx-background-color: ghostwhite;
+            </style>
+            <BorderPane.margin>
+                <Insets bottom="20" left="20" right="20" top="20"/>
+            </BorderPane.margin>
+            <padding>
+                <Insets bottom="20" left="20" right="20" top="20"/>
+            </padding>
+        </AnchorPane>
+    </center>
+</BorderPane>
